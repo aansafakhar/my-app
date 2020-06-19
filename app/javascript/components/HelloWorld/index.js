@@ -1,17 +1,15 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React, { Component } from "react"
+
+import 'bootstrap/dist/css/bootstrap.css';
 import './style.scss';
-class HelloWorld extends React.Component {
-  render () {
+
+class HelloWorld extends Component {
+  render() {
     return (
-      <div className={"greeting"}>
-        {this.props.greeting}
-      </div>
+      <div className={'justify-content-center align-items-center h-100-vh greeting'}>
+        < h1 > Welcome </h1 >
+      </div >
     );
   }
 }
-
-HelloWorld.propTypes = {
-  greeting: PropTypes.string
-};
 export default HelloWorld

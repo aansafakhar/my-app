@@ -2,13 +2,23 @@
   "name": "my-app",
   "private": true,
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
     "@babel/preset-react": "^7.10.1",
     "@rails/webpacker": "5.1.1",
+    "apollo-boost": "^0.4.9",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "bootstrap": "^4.5.0",
+    "graphql": "^15.1.0",
+    "graphql-tag": "^2.10.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
+    "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.1",
-    "react_ujs": "^2.6.1"
+    "react-router-dom": "^5.2.0",
+    "react-toastify": "^6.0.5",
+    "react_ujs": "^2.6.1",
+    "reactstrap": "^8.4.1"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.11.0"
