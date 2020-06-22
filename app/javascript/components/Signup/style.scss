@@ -1,0 +1,31 @@
+.main-container {
+  background: lightblue;
+  margin-top: 100px;
+  width: 80%;
+  padding: 45px;
+  align-items: flex-start;
+
+  .container {
+    width: 65%;
+    background: #40c1a0;
+    padding: 20px 70px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 19px;
+  }
+
+  h2 {
+    color: black;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  .form-group {
+    color: black;
+    font-weight: bold;
+  }
+
+  .row-div {
+    width: 100%;
+  }
+}

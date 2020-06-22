@@ -16,6 +16,12 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
+# devise
+gem 'devise'
+
+#graphql
+gem 'graphql'
+
 gem 'webpacker'
 gem 'react-rails'
 
@@ -49,6 +55,8 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'letter_opener'
+  gem 'letter_opener_web', '~> 1.0'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
@@ -63,3 +71,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'graphiql-rails', group: :development
+
+gem "bootstrap", "~> 4.5"

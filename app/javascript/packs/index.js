@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import HelloWorld from '../components/HelloWorld';
+import Router from '../components/Router';
 
-render(<HelloWorld greeting={"Welcome to My APP"} />, document.querySelector('#root'));
+render(<Router />, document.querySelector('#root'));
+
