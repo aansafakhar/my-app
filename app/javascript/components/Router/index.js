@@ -20,14 +20,14 @@ const client = new ApolloClient({
 export default () => (
   <ApolloProvider client={client}>
     <Router>
-      <Route exact path="/">
-        <HelloWorld />
-      </Route>
       <Route exact path="/sign_up">
         <Signup />
       </Route>
       <Route exact path="/sign_in">
         <Signin />
+      </Route>
+      <Route exact path="/">
+        <HelloWorld />
       </Route>
     </Router>
     <ToastContainer />
