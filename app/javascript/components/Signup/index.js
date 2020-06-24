@@ -11,6 +11,8 @@ import './style.scss';
 const Signup = () => {
   const [emailInput, setEmail] = useState(null);
   const [passwordInput, setPassword] = useState(null);
+  const [firstnameInput, setFirstname] = useState(null);
+  const [lastnameInput, setLastname] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const history = useHistory();
   const [signUpUser] = useMutation(SIGNUP_USER, {
@@ -20,6 +22,7 @@ const Signup = () => {
       history.push('/sign_in');
     },
     onError: (err) => {
+      console.log(err);
       toast.error(`signup failed`);
       console.log(err);
     },
@@ -30,8 +33,15 @@ const Signup = () => {
       variables: {
         email: emailInput,
         password: passwordInput,
+        firstName: firstnameInput,
+        lastName: lastnameInput
       },
     });
+    console.log(emailInput);
+    console.log(passwordInput);
+    console.log(firstnameInput);
+    console.log(lastnameInput);
+    console.log(signUpUser);
   };
 
   return (
@@ -42,6 +52,8 @@ const Signup = () => {
             submitForm={submitSignUpForm}
             setEmail={setEmail}
             setPassword={setPassword}
+            setFirstname={setFirstname}
+            setLastname={setLastname}
           />
         </>}
     </div>
