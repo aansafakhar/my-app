@@ -12,6 +12,8 @@ const Form = (props) => {
   const {
     setEmail,
     setPassword,
+    setFirstname,
+    setLastname,
     submitForm,
   } = props;
   return (
@@ -22,7 +24,19 @@ const Form = (props) => {
             <div className={'signup-section'}>
               <h2>
                 Signup for an account
-            </h2>
+              </h2>
+              <FormGroup>
+                <Label for="firstname">First Name</Label>
+                <div className={'icon-group'}>
+                  <Input type="text" name="firstname" id="firstname" placeholder="Enter your First Name" onChange={(e) => setFirstname(e.target.value)} />
+                </div>
+              </FormGroup>
+              <FormGroup>
+                <Label for="lastname">Last Name</Label>
+                <div className={'icon-group'}>
+                  <Input type="text" name="lastname" id="lastname" placeholder="Enter your Last Name" onChange={(e) => setLastname(e.target.value)} />
+                </div>
+              </FormGroup>
               <FormGroup>
                 <Label for="email">Email</Label>
                 <div className={'icon-group'}>
@@ -48,6 +62,8 @@ const Form = (props) => {
 Form.propTypes = {
   setEmail: PropTypes.func,
   setPassword: PropTypes.func,
+  setFirstname: PropTypes.func,
+  setLastname: PropTypes.func,
   submitForm: PropTypes.func,
 };
 export default Form;
